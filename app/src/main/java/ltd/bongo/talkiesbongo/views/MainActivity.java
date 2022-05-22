@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             public void onChanged(MovieResult movieResult) {
                 navController.navigate(R.id.action_movieListFragment_to_movieDetailsFragment, null);
                 binding.backBtn.setVisibility(View.VISIBLE);
+
             }
         });
         binding.backBtn.setOnClickListener(new View.OnClickListener() {

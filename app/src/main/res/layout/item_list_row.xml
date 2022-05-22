@@ -67,7 +67,7 @@
                         android:gravity="left"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="Release:"
+                        android:text="Release: "
                         android:textAlignment="gravity"
                         android:textColor="@color/black"
                         android:textSize="12sp" />
@@ -98,7 +98,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:gravity="left"
-                        android:text="Popularity:"
+                        android:text="Popularity: "
                         android:textColor="@color/black"
                         android:textSize="12sp" />
 

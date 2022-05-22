@@ -78,46 +78,12 @@ public class MovieListFragment extends Fragment {
             // Update the UI.
 
             movieResults.addAll(item.getResults());
-            Log.d("pagination", "movieResults: "+movieResults.size()+" page"+page+"api data "+item.getResults().size());
+         //   Log.d("pagination", "movieResults: "+movieResults.size()+" page"+page+"api data "+item.getResults().size());
            movieListAdapter.setListAgain(movieResults);
             binding.idPBLoading.setVisibility(View.GONE);
 
         });
 
-//        binding.rvMovieList.addOnScrollListener(new RecyclerView.OnScrollListener() {
-//            @Override
-//            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
-//                super.onScrollStateChanged(recyclerView, newState);
-//            }
-//
-//            @Override
-//            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
-//                super.onScrolled(recyclerView, dx, dy);
-//                visibleItemCount=layoutManager.getChildCount();
-//                        totalItemCount=layoutManager.getItemCount();
-//
-//                pastVisibleItemCount = ((GridLayoutManager)recyclerView.getLayoutManager()).findFirstVisibleItemPosition();
-//
-//                Log.d("pagination", "onScrolled: "+totalItemCount);
-//                if(dy>0){
-//                    if(isLoading){
-//
-//                        if(totalItemCount>previoustotal){
-//                            isLoading=false;
-//
-//
-//
-//                        }
-//                    }
-//
-//                    if (!isLoading&&(totalItemCount-visibleItemCount)<= (pastVisibleItemCount+view_thhold)) {
-//                       page++;
-//                       model.getMovies(page);
-//                       binding.idPBLoading.setVisibility(View.VISIBLE);
-//                    }
-//                }
-//            }
-//        });
 
         binding.idNestedSV.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
             @Override
